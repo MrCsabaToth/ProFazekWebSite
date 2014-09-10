@@ -1,4 +1,8 @@
 ProFazekWebSite
 ===============
 
-ASP.NET news portal website featuring WebParts and Lucene.NET for search
+ASP.NET news portal sample website featuring
+* WebParts
+* Lucene.NET for search
+* Login/authentication
+* Ad rotator
