@@ -1,0 +1,400 @@
+/* Sets element margins, padding, and border to 0 to even out browser differences when adding desired values later. */
+html, body, div, p, h1, h2, h3, h4, h5, h6, blockquote, ol, ul, li, dl, dt, dd, td, form, fieldset, a, img, button {
+     margin: 0;
+     padding: 0;
+     border: 0;
+}
+body{
+	text-align:center;
+	background-color:#848484;
+	background-image:url(Images/bg_tile.gif);
+	background-repeat:repeat;
+	font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size:0.78em;
+}
+
+h1, h2, h3, h4, h5, h6 {color:#444444;}
+
+/*Typographics styles adapted from http://www.thenoodleincident.com/tutorials/typography/ */
+h1 {
+	margin-top:1em;
+	font-size: 1.4em;
+	font-weight: bold;
+}
+h2 {
+	margin-top:1em;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+h3 {
+	margin: 0.5em 0;
+	font-size: 1.2em;
+	font-weight: normal;
+}
+h4 {
+	margin: 0.5em 0;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+h5 {
+	margin: 0.5em 0;
+	font-size: 1.0em;
+	font-weight: bold;
+}
+h6 {
+	margin: 0.5em 0;
+	font-size: 0.8em;
+	font-weight: bold;
+}
+
+p  {margin: 1em 0;}
+
+a {text-decoration:underline;}
+
+a:hover {text-decoration:none;}
+
+#wrapper{
+	width:770px;
+	margin:0 auto;
+	padding-bottom:3px;
+	border:1px solid #FFFFFF;	
+	text-align:left;
+	background-color:#E4E4E4;
+	background-image:url(Images/main_bg.png);
+	background-repeat:repeat-y;
+	background-position:top center;
+}
+* html .wrapper {   /*** IE5.x/win box model fix ***/
+	width: 772px;
+	wid\th: 770px;
+}
+#header{
+	height:70px; 
+	position:relative;
+	background-image:url(Images/header_bg.png);
+	background-repeat:repeat-x;
+	background-color:#F2F2F2;
+}
+#logo{
+	position:absolute;
+	top:11px;
+	left:11px;
+}
+#banner{
+	margin:0 152px;
+	text-align:center;
+}
+#search{
+	position:absolute;
+	bottom:5px;
+	right:5px;
+}
+#mainnav {
+	padding:0 150px;
+	border-bottom:1px solid #FFFFFF;
+	border-top:1px solid #FC506F;	
+	background-color:#F2F2F2;
+}
+
+* html #mainnav tr {height:1.4em;}
+
+#mainnav .item {
+	padding:2px 7px;
+	border-width:1px 0 0 1px; 
+	border-style:solid; 
+	border-color:#FFFFFF;
+	background-color:#DADADA; 
+	color:#333333; 
+}
+
+* html #mainnav .item {padding:0 20px;}
+
+#mainnav .selected {
+	background-color:#FF9900; 
+	color:#FFFFFF;
+}
+#mainnav .hover {
+	color:#FF284E; 
+	background-color:#DADADA;
+}
+
+#mainnav table {border-right:1px solid #FFFFFF;}
+
+#mainnav table table {border-right:none;}
+
+#contentwrapper{
+	position: relative; /*** IE needs this or the contents won't show outside the parent container. ***/
+	margin-left: 150px;    /*** Critical left col dimension value ***/
+	width: 468px; /*468px;*/   /*** Critical left and right col/divider dimension value (moves inversly) ***/
+	border-left: 1px solid #FFFFFF;  /*** Critical left divider dimension value ***/
+	border-right: 1px solid #FFFFFF; /*** Critical right divider dimension value ***/
+}
+
+* html #contentwrapper {  /*** IE5.x/win box model fix ***/
+	width: 470px;   /*** Critical left and right col/divider dimension value (moves inversly) ***/
+	wid\th: 468px;   /*** Critical left and right col/divider dimension value (moves inversly) ***/
+}
+#floatwrapper {
+	float: left;
+	width: 468px;   /*** Critical left and right col/divider dimension value (moves inversly) ***/
+	margin-right: -1px;   /*** Static fix ***/
+}
+#centercolumn{
+	float: right;
+	width: 468px;   /*** Critical left and right col/divider dimension value (moves inversly) ***/
+	
+	/* \*/
+	margin-left: -1px; 
+	/* Hidden from IE-mac */
+
+	padding-top:30px;
+}
+#breadcrumbs{
+	position:absolute;
+	top:5px;
+	left:25px;
+	font-size:0.9em;
+}
+#breadcrumbs a {
+	color:#000000;
+	text-decoration:underline;
+}
+
+#breadcrumbs a:hover {text-decoration:none;}
+
+#copy a {color:#FF284E;}
+
+#copy .container {
+	margin:1px;
+	padding:0 15px 10px 15px;
+	border:1px solid #999999;
+	background-color:#FFFFFF;
+}
+
+/* \*/
+* html #copy .container {height:1%;}
+/* */
+
+#copy img, #rightcolumn img {border:1px solid #FF284E !important;}
+
+#copy .teaser{
+	margin-top:0;
+	color:#777777; 
+	font-size:0.9em; 
+	font-weight:normal;
+}
+
+#copy td, #copy th {padding: 0.2em 0.5em;}
+
+#copy .container table tr {font-size:0.9em;}
+
+.txtBox {border:1px solid #666666;}
+
+#copy fieldset {	
+	margin:1em 0;
+	padding:1em;
+	border:1px solid #CCCCCC;
+}
+
+#copy legend {
+	color:#666666;
+	background-color:#FFFFFF;
+}
+
+* html #copy legend {padding:0.5em;}
+
+.button {
+    border:1px solid #FFFFFF;
+    color:#FFFFFF;
+    background-color:#FF9900;
+    font-size:1em;
+}
+
+#copy .container .button {border-color:#CCCCCC;}
+
+div.readmore {
+	text-align:right;
+	font-size:0.9em;
+}
+
+#leftcolumn {
+	position: relative; /*** IE needs this or the contents won't show outside the parent container. ***/
+	width: 152px;    /*** Critical left col/divider dimension value ***/
+	margin-left: -151px;    /*** Critical left col/divider dimension value ***/
+	padding-top:30px;
+}
+* html #leftcolumn {
+	float:left;	
+	padding-top:25px;
+}
+
+*>html #leftcolumn {width:151px;}   /*** Fix only for IE/Mac ***/
+
+/*** This is a fix for IE5/Win at the largest text size setting. ***/
+/* \*/
+* html #leftcolumn {margin-right: -3px;}
+/* */
+
+#leftcolcontainer{
+	width: 150px;    /*** Critical left col dimension value ***/
+}
+
+#subnav {
+	overflow:hidden;
+	margin-bottom:40px;
+}
+
+* html #subnav tr {height:1.4em;}
+
+#subnav .item {
+	padding:2px 7px;
+	border-top:1px solid #FFFFFF;
+	background-color:#E4E4E4; 
+	color:#333333; 
+}
+
+* html #subnav .item {padding:0 20px;}
+
+#subnav .selected {
+	background-color:#FF9900; 
+	color:#FFFFFF;
+}
+#subnav .hover {
+	color:#FF284E; 
+	background-color:#E4E4E4;
+}
+
+#subnav table {border-bottom:1px solid #FFFFFF;}
+
+#subnav table table {border-bottom:none;}
+
+h4 img {margin-bottom:-0.5em;}
+
+#rightcolumn{
+	float: left; 
+	position: relative; /*** IE needs this or the contents won't show outside the parent container. ***/
+	width: 152px;    /*** Critical right col/divider dimension value ***/
+	margin-right: -150px;    /*** Critical right col/divider dimension value ***/
+	margin-left: -1px;   /*** Static fix ***/
+	padding-top:30px;
+}
+
+/* \*/
+* html #rightcolumn {
+	margin-left: 0px; 
+	margin-right: -500px; 
+	mar\gin-right: -152px;
+	padding-top:25px;
+}
+/* */
+
+/*** These commented-out rules below are there to explain the "Critical" info 
+	for the rules above, because comments must not appear within the Mac-hack.
+	The "rules" below are not active, they are just for teaching purposes. ***/
+
+/*
+* html .right {
+margin-left: 0px;    *** Critical right divider dimension value ***
+margin-right: -500px;    *** IE5.x/win fix, must be above a critical number, but very high values appear okay ***
+mar\gin-right: -152px;    *** Critical right col/divider dimension value ***
+}
+*/
+
+#rightcolcontainer{
+	/* \*/
+	width: 150px;
+	/* Hidden from IE-Mac */   /*** Critical right col dimension value ***/
+	margin-left: 3px;    /*** Critical right divider dimension value ***/
+}
+
+/* \*/
+* html #rightcolcontainer {
+	fl\oat: right;
+	margin-left: 2px; 
+	mar\gin-left: 0px; 
+}
+/* */
+
+.sidebarcontainer{
+	margin:5px;
+	padding:6px;
+	border:1px solid #FFFFFF;
+	background-color:#EFEFEF;
+	font-size:smaller;
+}
+/* \*/
+* html .sidebarcontainer {height:1%;}
+/* */
+
+
+.sidebarcontainer a {color:#FF284E;}
+
+.sidebarcontainer li {list-style-type:none;}
+
+#footer {
+	clear:both;
+	margin:1px 5px;
+	padding:2px 20px;
+	border:1px solid #999999;
+	background-color:#FFFFFF;
+	font-size:0.9em;
+}
+#footer a {
+	margin:1px 5px;
+	color:#FF284E;
+}
+.imgfloatright {
+	float:right;
+	display:inline;
+	margin: 0.25em 0 0.25em 1em;
+}
+.imgfloatleft {
+	float:left;
+	display:inline;
+	margin: 0.25em 1em 0.25em 0;
+}
+@media print {	
+	body{
+		font-size:11pt;
+		line-height:13pt;
+		background:#FFFFFF !important;
+	}	
+	#wrapper, #contentwrapper, #floatwrapper, #centercolumn, * html #wrapper, * html #contentwrapper, * html #floatwrapper, * html #centercolumn {
+		width:auto !important;
+		margin:auto !important;
+	}
+
+	#wrapper, #contentwrapper {border:none;}
+
+	#mainnav{
+		padding:0;
+		text-align:center;
+	}
+
+	#leftcolumn, #rightcolumn, #search {display:none;}
+
+	#wrapper, #header, #mainnav, #mainnav .item, #mainnav .selected, #copy .container, #footer {
+		background:transparent;
+	}
+	#centercolumn {
+		float:none;
+		margin:0 1em 0 2.5em;
+	}	
+
+	#breadcrumbs {position:static;}
+
+	#copy .container{
+		margin:0;
+		padding:0 !important;
+		border-style:none !important;
+		border-width:0;
+	}
+	
+    #copy fieldset {border:none;}	
+	    
+	#footer{	
+		position:static;
+		border-style:none !important;
+		border-top:1px solid #000000;
+	}
+}

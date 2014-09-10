@@ -1,0 +1,128 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>ProFazek Weboldal</title>
+	<!--[if IE 5]>
+	<style type="text/css">		
+		.sidebarcontainer td, .sidebarcontainer tr {font-size:smaller;}		
+		#subnav a {height:1em;}
+	    body td, body th {font-size:0.78em;}		
+	</style>
+	<![endif]-->
+	<!--[if IE 7]>
+	<style type="text/css">		        
+       #rightcolumn{margin-right: -152px;}
+	</style>
+	<![endif]-->		
+</head>
+<body>
+    <form id="mainForm" runat="server">
+        <asp:scriptmanager ID="Scriptmanager1" runat="server">
+        </asp:scriptmanager>
+        <div id="wrapper">
+			<div id="header">
+				<div id="logo">
+					<asp:HyperLink ID="lnkHome" runat="server" ToolTip="Return to homepage" NavigateUrl="~/Default.aspx">
+					    <asp:Image runat="server" ID="imgLogo" SkinID="logoImage" AlternateText="company logo" />
+					</asp:HyperLink>
+				</div>
+				<div id="banner">
+					<%-- Put a banner here if you wish. --%>
+				</div>
+			</div>
+            <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" 
+                ShowStartingNode="False" />
+			<div id="mainnav">
+                <asp:Menu ID="Menu1" runat="server" SkinID="mainmenu" DataSourceID="SiteMapDataSource1" 
+                    meta:resourcekey="Menu1Resource1">
+                </asp:Menu>
+			</div>
+			<div id="contentwrapper">
+				<div id="floatwrapper">
+					<div id="centercolumn">
+						<div id="copy">
+							<asp:ContentPlaceHolder runat="server" ID="mainCopy">
+							    <%-- Main page content goes here. Create a single 
+							    content box by wrapping everything in one 
+							    <div class="container"> or create multiple boxes 
+							    as needed. See the sample homepage for a 
+							    demonstration. 
+							    
+							    This is the general structure:
+							    <div class="container">
+                                    <h1>Headline</h1>
+                                    <p class="teaser">Teaser text</p>
+                                    <p>Regular text and other markup.</p>
+                                </div>							    
+							    --%>								
+							</asp:ContentPlaceHolder>
+						</div>
+					</div>
+					<div id="leftcolumn">
+						<div id="leftcolcontainer">
+							<div id="subnav">
+                                <asp:Menu ID="Menu2" runat="server" SkinID="subMenu" DataSourceID="SiteMapDataSource1" 
+                                    meta:resourcekey="Menu1Resource1">
+                                    <StaticItemTemplate>
+                                        <asp:HyperLink ID="ImageButton1" runat="server"
+                                             NavigateUrl='<%# Eval("NavigateUrl") %>'
+                                             ImageUrl='<%# Eval("Text", "tacepao.axd?name=tcpo&w=110&text={0}") %>'
+                                             AlternateText='<%# Eval("Text") %>' />
+                                    </StaticItemTemplate>
+                                </asp:Menu>
+							</div>
+							<asp:ContentPlaceHolder ID="leftColumn" runat="server">
+								<%-- Left sidebar content placeholder. Again the 
+								individual boxes are created by using a <div> and 
+								assigning a class to it: 'sidebarcontainer'. 
+								Follow the structure of the sample content below:
+								
+								<div class="sidebarcontainer">
+									<h4>Headline</h4>
+									<p>Content</p>
+								</div>								
+								--%>
+								<div class="sidebarcontainer">
+                                    <asp:LoginName ID="LoginName1" runat="server" 
+                                        meta:resourcekey="LoginName1Resource1" />
+                                    <asp:LoginStatus ID="LoginStatus1" runat="server" 
+                                        meta:resourcekey="LoginStatus1Resource1" />
+								</div>
+							</asp:ContentPlaceHolder>
+						</div>
+					</div>
+				</div>
+				<div id="rightcolumn">
+					<div id="rightcolcontainer">
+						<asp:ContentPlaceHolder ID="rightColumn" runat="server">
+							<%-- Right sidebar content placeholder. Again the 
+								individual boxes are created by using a <div> and 
+								assigning a class to it: 'sidebarcontainer'. 
+								Follow the structure of the sample content below:
+								
+								<div class="sidebarcontainer">
+									<h4>Headline</h4>
+									<p>Content</p>
+								</div>								
+								--%>
+							<div class="sidebarcontainer">
+                                <asp:AdRotator ID="FlashRotator1" runat="server" 
+                                    AdvertisementFile="~/App_Data/AdsConfig.xml" Height="240px" Width="120px" 
+                                    meta:resourcekey="FlashRotator1Resource1" />
+							</div>
+						</asp:ContentPlaceHolder>
+					</div>
+				</div>
+				<div id="footer">
+					&copy; 2009 ProFazek <a href="http://www.netacademia.net" title="NetAcademia">NetAcademia</a>
+					<a href="http://www.itfactory.hu" title="ITFactory">ITFactory</a>
+					<a href="http://www.microsoft.com" title="Microsoft">Microsoft</a>
+				</div>
+			</div>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<%-- The company logo at the top of the page --%>
+<asp:Image runat="server" SkinID="logoImage" Height="48" Width="269" ImageUrl="Images/logo.png" />
+
+<%-- Search box --%>
+<asp:TextBox SkinID="searchBox" runat="server" Width="120px" BorderColor="#FF284E" BorderStyle="Solid" BorderWidth="1px" Style="font-size:1em;"/>
+<%-- Search button --%>
+<asp:Button SkinID="searchButton" runat="server" BackColor="#FF284E" ForeColor="#FFFFFF" BorderColor="#FFFFFF" BorderStyle="solid" BorderWidth="1px" Style="font-size:0.9em;"/>
+
+<%-- Top vertical menu --%>
+<asp:Menu SkinID="mainmenu" Orientation="Horizontal" runat="server" StaticDisplayLevels="2" MaximumDynamicDisplayLevels="0" StaticSubMenuIndent="0">
+	<StaticMenuStyle BackColor="Transparent" />
+	<StaticMenuItemStyle CssClass="item" ItemSpacing="0" />
+	<StaticHoverStyle CssClass="hover" />
+	<StaticSelectedStyle CssClass="selected" />					
+</asp:Menu>
+
+<%-- Submenu --%>
+<asp:Menu runat="server" SkinID="subMenu" Orientation="Vertical" StaticDisplayLevels="2" MaximumDynamicDisplayLevels="0" StaticSubMenuIndent="20">
+	<StaticMenuStyle BackColor="Transparent" Width="150" />
+	<StaticMenuItemStyle CssClass="item" ItemSpacing="0" />
+	<StaticHoverStyle CssClass="hover" />
+	<StaticSelectedStyle CssClass="selected" />	
+</asp:Menu>
+
+<%-- Filter textbox appearance --%>
+<asp:TextBox SkinID="filterBox" runat="server" Width="120px" CssClass="txtBox" />
+
+<%-- Center textbox appearance --%>
+<asp:TextBox SkinID="centerBox" runat="server" Width="400px" CssClass="txtBox" />
+
+<%-- Center label appearance --%>
+<asp:Label SkinID="centerLabel" runat="server" Width="400px" />
+
+<%-- Default textbox appearance --%>
+<asp:TextBox runat="server" CssClass="txtBox" />
+
+<%-- Default button appearance --%>
+<asp:Button runat="server" CssClass="button"/>

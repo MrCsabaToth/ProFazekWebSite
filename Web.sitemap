@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="" title="Root"  description="" roles="*">
+        <siteMapNode url="~/Main.aspx" title="Main Page" description="News Main" />
+        <siteMapNode url="~/members/PersonalData.aspx" title="Personal Data"  description="Personal settings" />
+        <siteMapNode url="~/Login.aspx" title="Login"  description="Login / Register" />
+        <siteMapNode title="Partners">
+            <siteMapNode url="http://www.netacademia.net" title="NetAcademia"/>
+            <siteMapNode url="http://www.itfactory.hu" title="ITFactory"/>
+            <siteMapNode url="http://www.microsoft.com" title="Microsoft"/>
+        </siteMapNode>
+    </siteMapNode>
+</siteMap>

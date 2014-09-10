@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements xmlns="http://schemas.microsoft.com/AspNet/AdRotator-Schedule-File">
+    <Ad>
+        <ImageUrl>~/ads/computer_outlet_120x240.png</ImageUrl>
+        <NavigateUrl>http://www.istor.hu/</NavigateUrl>
+        <AlternateText>Computer Outlet</AlternateText>
+        <Keyword>Istor</Keyword>
+        <Impression>0</Impression>
+    </Ad>
+    <Ad>
+        <ImageUrl>~/ads/netacademia_120x240.png</ImageUrl>
+        <NavigateUrl>http://www.microsoft.com/hun/technet/sbs/</NavigateUrl>
+        <AlternateText>SBS oktatas</AlternateText>
+        <Keyword>Istor</Keyword>
+        <Impression>0</Impression>
+    </Ad>
+    <Ad>
+        <ImageUrl>~/ads/nod32.jpg</ImageUrl>
+        <NavigateUrl>http://www.eset.hu/</NavigateUrl>
+        <AlternateText>NOD32 antivirus</AlternateText>
+        <Keyword>NOD32</Keyword>
+        <Impression>10</Impression>
+    </Ad>
+    <Ad>
+        <ImageUrl>~/ads/virtualis_120x240.png</ImageUrl>
+        <NavigateUrl>http://www.hunnet.hu/netacademia/</NavigateUrl>
+        <AlternateText>Virtualis szerver olcson</AlternateText>
+        <Keyword>Hunnet</Keyword>
+        <Impression>0</Impression>
+    </Ad>
+</Advertisements>
+
