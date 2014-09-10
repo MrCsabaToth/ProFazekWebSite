@@ -15,7 +15,7 @@ x64/
 x86/
 build/
 bld/
-#[Bb]in/
+[Bb]in/
 [Oo]bj/
 
 # Roslyn cache directories
@@ -51,7 +51,7 @@ dlldata.c
 *.tlh
 *.tmp
 *.tmp_proj
-#*.log
+*.log
 *.vspscc
 *.vssscc
 .builds
@@ -171,8 +171,8 @@ UpgradeLog*.XML
 UpgradeLog*.htm
 
 # SQL Server files
-#*.mdf
-#*.ldf
+*.mdf
+*.ldf
 
 # Business Intelligence projects
 *.rdl.data
